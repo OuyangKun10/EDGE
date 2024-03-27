@@ -1,0 +1,41 @@
+TARGET_COLUMN: 'code_mixed_explanation'
+TEXT_INPUT_PATH: '/data/qiaoyang/ouyangkun/MAF-main/Data/Text/'
+ACOUSTIC_INPUT_PATH: '/data/qiaoyang/ouyangkun/MAF-main/Data/Audio/'
+VISUAL_INPUT_PATH: '/data/qiaoyang/ouyangkun/MAF-main/Data/Video/'
+
+MODEL_OUTPUT_DIR: '/data/qiaoyang/ouyangkun/MAF-main/models/MAF-TAV-BART/'
+RESULT_OUTPUT_DIR: '../results/MAF-TAV-BART/'
+
+LOWERCASE_UTTERANCES: False
+UNFOLDED_DIALOGUE: True
+
+if UNFOLDED_DIALOGUE:
+    SOURCE_COLUMN: 'dialogue'
+else:
+    SOURCE_COLUMN_1: 'target'
+    SOURCE_COLUMN_2: 'context'
+
+
+
+SOURCE_MAX_LEN: 480
+TARGET_MAX_LEN: 50
+MAX_UTTERANCES: 25
+
+ACOUSTIC_DIM: 154
+ACOUSTIC_MAX_LEN: 600
+
+VISUAL_DIM: 2048
+VISUAL_MAX_LEN:  96
+
+BATCH_SIZE: 16
+MAX_EPOCHS: 60
+
+BASE_LEARNING_RATE:  5e-6
+NEW_LEARNING_RATE: 5e-5
+WEIGHT_DECAY: 1e-4
+
+NUM_BEAMS: 5
+EARLY_STOPPING: True
+NO_REPEAT_NGRAM_SIZE:  3
+
+EARLY_STOPPING_THRESHOLD: 5
