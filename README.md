@@ -1,4 +1,8 @@
 # EDGE
 Here is the code of the paper titled "Sentiment-enhanced Graph-based Sarcasm Explanation in Dialogue", which got accepted by IEEE Transactions on Multimedia (TMM).
 
-The early access version of this paper will be available within 1-3 weeks.
+1. run the BART-based model
+python code/sentiment-enhanced-GCN-scheme.py
+
+2. run the mBART-based model
+python code/sentiment-enhanced-GCN-scheme.py
