@@ -5,4 +5,4 @@ Here is the code of the paper titled "Sentiment-enhanced Graph-based Sarcasm Exp
 python code/sentiment-enhanced-GCN-scheme.py
 
 2. run the mBART-based model
-python code/sentiment-enhanced-GCN-scheme.py
+python code/sentiment-enhanced-mbart-GCN-scheme.py
